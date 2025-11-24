@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+// app/layout.tsx
 import "./globals.css";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Röhrenverstärker Tauschbörse",
-  description: "Kaufe, tausche und verkaufe Röhrenverstärker & Röhren.",
+  title: "Röhrenbörse",
+  description: "Marktplatz für Röhren & Vintage Audio",
 };
 
 export default function RootLayout({
@@ -13,10 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="bg-slate-950 text-slate-100">
-        {children}
-      </body>
+      <body className="page">{children}</body>
     </html>
   );
 }
-
